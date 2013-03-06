@@ -1,15 +1,4 @@
-if ( __FILE__ == $0 )
-	$LOAD_PATH.unshift File.dirname(__FILE__)
-end
-
-require 'rubygems'
 require 'thread'
-
-class FIX
-end
-
-class FIX::Common
-end
 
 # FIX::Common::Timer class use Threads, please use Thread.abort_on_exception = true to debug/work with application
 class FIX::Common::Timer

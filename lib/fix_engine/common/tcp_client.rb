@@ -1,16 +1,4 @@
-if ( __FILE__ == $0 )
-	$LOAD_PATH.unshift File.dirname(__FILE__)
-	$LOAD_PATH.unshift File.expand_path("../..",File.dirname(__FILE__))
-end
-
 require 'socket'
-
-class FIX
-end
-
-class FIX::Common
-end
-
 
 class FIX::Common::TCPClientObserver
 	def initialize

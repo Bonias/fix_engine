@@ -1,14 +1,7 @@
-if ( __FILE__ == $0 )
-	$LOAD_PATH.unshift File.dirname(__FILE__)
-end
-
-require 'rubygems'
-require 'libxml'
-
-class FIX
-end
-
 class FIX::Message
+
+  SEP = "\01".freeze
+
   def initialize(session, msg_type, extra_fields = false)
     @session      = session
     @begin_string = session.begin_string

@@ -1,12 +1,4 @@
-if ( __FILE__ == $0 )
-	$LOAD_PATH.unshift File.dirname(__FILE__)
-end
-
-require 'rubygems'
 require 'libxml'
-
-class FIX
-end
 
 # Fix Session protocol class
 # Created to parse XML schema that describes possible messages.

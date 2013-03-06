@@ -1,9 +1,5 @@
-if ( __FILE__ == $0 )
-	$LOAD_PATH.unshift File.dirname(__FILE__)
-end
+require 'fix_engine'
 
-require 'fix_engine/fix/message'
-require 'fix_engine/fix/session'
 require 'test/unit'
 
 class FixMessageTest < Test::Unit::TestCase

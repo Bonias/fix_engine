@@ -1,8 +1,5 @@
-if ( __FILE__ == $0 )
-	$LOAD_PATH.unshift File.dirname(__FILE__)
-end
+require 'fix_engine'
 
-require 'fix_engine/common/tcp_server'
 require 'test/unit'
 
 Thread.abort_on_exception = true
