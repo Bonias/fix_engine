@@ -120,6 +120,7 @@ class FIX::Message
     self.add_field("MsgType", @msg_type || msg_type)
 
     @extra_fields = extra_fields
+    add_extra_fields
   end
 
   def reset
@@ -174,7 +175,6 @@ class FIX::Message
       add_required_header_fields
       add_sending_time_filed
       add_message_definition_fields
-      add_extra_fields
 
       msg_to_string
     end
